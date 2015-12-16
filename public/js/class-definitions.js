@@ -341,7 +341,24 @@ function installLinux(string) {
  * @return {Bool when False, String when True}
  *
  */
-
+function drink(string) {
+  if (beers.hasOwnProperty(string)) {
+    var response = "This " + string + " is ";
+      if (Array.isArray(beers[string])){
+        for (var i=0; i<beers[string].length; i++) {
+          response += beers[string][i];
+          if(i < i<beers[string].length - 1){
+            response += " and ";
+          }
+        }
+        response+= ".";
+        return response;
+      }
+      return response + beers[string] + ".";
+  } else {
+    return false;
+  }
+}
 
 /* Step 24
  *
