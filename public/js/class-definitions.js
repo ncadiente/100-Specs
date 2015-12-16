@@ -1009,7 +1009,13 @@ function Vehicle(make, model) {
  * value of the sides property to null.
  *
  */
-
+function Shape(number) {
+  if (number >= 3) {
+    this.sides = number;
+  } else {
+    this.sides = null;
+  }
+}
 
 /**
  * Step 53
@@ -1018,7 +1024,10 @@ function Vehicle(make, model) {
  * @param {anything} contents The contents of the box
  * @param {boolean} isOpen     Whether the box is opened or closed
  */
-
+function Box(contents, open) {
+  this.contents = contents;
+  this.isOpen = open;
+}
 
 /**
  * Step 54
