@@ -682,7 +682,18 @@ PrincessLeia.prototype.marries = function(person) {
  *   staplePapers
  *
  */
+function Stapler(color, maxPapers) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+}
 
+Stapler.prototype.staplePapers = function(number) {
+  if (number <= this.maxPapers){
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /* Step 35
  *
