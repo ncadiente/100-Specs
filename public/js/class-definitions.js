@@ -449,6 +449,21 @@ function favoritePlanet(string) {
  *
  */
 
+function Person(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+}
+
+  Person.prototype.spendMoney = function(money) {
+    this.money-= money;
+  };
+  Person.prototype.earnMoney = function(money) {
+    this.money+= money;
+  };
+
+
 
 /* Step 28
  *
@@ -461,6 +476,14 @@ function favoritePlanet(string) {
  * @return {String}
  *
  */
+
+ function purchaseLaptop(string) {
+  if(laptopCosts.hasOwnProperty(string)) {
+    return laptopCosts[string].toString();
+  } else {
+    return -1;
+  }
+ }
 
 
 /* Step 29
