@@ -418,7 +418,13 @@ function listLivingOrgClass(string) {
  * @return {String}
  *
  */
-
+function favoritePlanet(string) {
+  if (planets.indexOf(string) === -1) {
+    return string + " is not a planet!";
+  } else {
+    return "I'm from " + string + ", but I wish I could go to " + planets[Math.floor(Math.random()*planets.length)];
+  }
+}
 
 /* Step 27
  *
