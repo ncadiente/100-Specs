@@ -31,8 +31,7 @@ var videogame_system = "Atari";
  * each planet in our solar system, in order of distance from the sun
  * Capitalize the names.
  */
-
-
+var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
 /* Step 5
  *
  * Declare a variable named "galilean_moons"
