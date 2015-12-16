@@ -371,6 +371,13 @@ function drink(string) {
  * @return {String if true else return false}
  *
  */
+ function browseURL(string) {
+  if (browsers.hasOwnProperty(string)) {
+    return browsers[string];
+  } else {
+    return false;
+  }
+ }
 
 
 /* Step 25
