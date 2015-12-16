@@ -389,7 +389,15 @@ function drink(string) {
  * @return {String}
  *
  */
-
+function listLivingOrgClass(string) {
+  var classList = document.createElement('ul');
+  for (var i = 0; i < livingOrganismClassification.length; i++) {
+    var listElement = document.createElement('li');
+    listElement.innerHTML = livingOrganismClassification[i];
+    classList.appendChild(listElement);
+  }
+  return classList.outerHTML;
+}
 
 /* Step 26
  *
