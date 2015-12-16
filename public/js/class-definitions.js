@@ -497,6 +497,13 @@ function Person(name, money, age, gender) {
  * @return {Bool}
  *
  */
+ function canTalkAbout(string) {
+  if (string === club_name) {
+    return false;
+  } else {
+    return true;
+  }
+ }
 
 
 /* Step 30
@@ -519,6 +526,13 @@ function Person(name, money, age, gender) {
  *   write
  *
  */
+
+ function Pen(color) {
+  this.color = color;
+ }
+  Pen.prototype.write = function(string) {
+    return this.color + ": " + string;
+  };
 
 
 /* Step 31
@@ -547,7 +561,21 @@ function Person(name, money, age, gender) {
  *   grow
  *
  */
-
+function Garden(plantsTotal) {
+  this.plantsTotal = plantsTotal;
+  this.isWatered = false;
+}
+Garden.prototype.water = function() {
+  this.isWatered = true;
+};
+Garden.prototype.grow = function() {
+  if (this.isWatered === true){
+    this.plantsTotal++;
+    this.isWatered = false;
+  } else {
+    return false;
+  }
+};
 
 /* Step 32
  *
